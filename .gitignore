@@ -25,3 +25,4 @@ replay_pid*
 
 # PSK: target
 interview/target
+.vscode/settings.json

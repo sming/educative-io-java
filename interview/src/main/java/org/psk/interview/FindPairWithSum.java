@@ -1,3 +1,5 @@
+package org.psk.interview;
+
 import java.io.PrintStream;
 import java.util.*;
 import java.util.stream.Collector;
