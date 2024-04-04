@@ -1,10 +1,7 @@
 package org.psk.interview;
 
-import java.io.PrintStream;
 import java.util.*;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Given an array of positive numbers and a positive number ‘k’, find the

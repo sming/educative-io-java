@@ -1,8 +1,6 @@
 package org.psk.interview;
 
-import java.io.PrintStream;
 import java.util.*;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -44,8 +42,8 @@ public class CalculateSubarrayAverage {
 
   }
 
-  private static double findAveragesBruteForce(int[] arr, int k) {
-    var res = new ArrayList<Integer>();
+  private static List<Double> findAveragesBruteForce(int[] arr, int k) {
+    var res = new ArrayList<Double>();
     var input = Arrays.stream(arr).boxed().toList();
     for (int i = 0; i < arr.length - k + 1; i++) {
 
@@ -56,13 +54,11 @@ public class CalculateSubarrayAverage {
 
       Stream<Integer> streamz2 = input.stream().skip(i).limit(k);
 
-      int total = streamz2.collect(Collectors.summingInt(Integer::intValue));
-      System.out.println(i + 1 + "th subtotal:" + total);
+      double total = streamz2.collect(Collectors.averagingInt(Integer::intValue));
+      System.out.println(i + 1 + "th average:" + total);
       res.add(total);
     }
-    int grandTotal = res.stream().collect(Collectors.summingInt(Integer::intValue));
-    System.out.println("GrandTotal: " + grandTotal);
-    return grandTotal / (res.size() * k);
+    return res;
   }
 
   /**
@@ -77,7 +73,11 @@ public class CalculateSubarrayAverage {
    * @return
    */
   private static List<Double> findAveragesSlidingWindow(int[] arr, int k) {
-    // TODO check for too small arr vs k
+    int len = arr.length;
+    if (len < k) {
+      return null;
+    }
+
     final Queue<Integer> q = new LinkedList<>();
     final List<Double> res = new ArrayList<>();
 
@@ -86,8 +86,10 @@ public class CalculateSubarrayAverage {
     }
     res.add(getAverage(q));
 
-    // so we start off with [1, 3, 2, 6, -1, 4, 1, 8, 2] and q contains [1, 3, 2, 6,
-    // -1]
+    // Simplify: arr is [1,2,3,4,5], k=2
+    // 1. q=head=1, tail=2
+    // 2. q=head=2, tail=3
+    // so by poll() and offer() we are good
     for (int i = k; i < arr.length; i++) {
       // pop and offer
       q.poll();
