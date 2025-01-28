@@ -1,0 +1,83 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+  ],
+  "settings": {
+    "workbench.colorCustomizations": {
+      "activityBar.activeBackground": "#ffb366",
+      "activityBar.background": "#ffb366",
+      "activityBar.foreground": "#15202b",
+      "activityBar.inactiveForeground": "#15202b99",
+      "activityBarBadge.background": "#008040",
+      "activityBarBadge.foreground": "#e7e7e7",
+      "commandCenter.border": "#15202b99",
+      "sash.hoverBorder": "#ffb366",
+      "statusBar.background": "#ff9933",
+      "statusBar.foreground": "#15202b",
+      "statusBarItem.hoverBackground": "#ff8000",
+      "statusBarItem.remoteBackground": "#ff9933",
+      "statusBarItem.remoteForeground": "#15202b",
+      "titleBar.activeBackground": "#ff9933",
+      "titleBar.activeForeground": "#15202b",
+      "titleBar.inactiveBackground": "#ff993399",
+      "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "ff9933",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "saveEditorLayout.list": [
+      {
+        "name": "cock wobblers",
+        "documents": [
+          {
+            "fsPath": "/Users/peter/src/personal/educative-io-java/interview/src/main/java/org/psk/interview/CalculateSubarrayAverage.java",
+            "column": 1,
+            "pinned": false
+          },
+          {
+            "fsPath": "/Users/peter/src/personal/educative-io-java/interview/src/main/java/org/psk/interview/CalculateMaxSumContiguousSubarray.java",
+            "column": 1,
+            "pinned": false
+          },
+          {
+            "fsPath": "/Users/peter/src/personal/educative-io-java/interview/src/main/java/org/psk/interview/RemoveDuplicatesFromSortedArray.java",
+            "column": 1,
+            "pinned": false
+          },
+          {
+            "fsPath": "/Users/peter/src/personal/educative-io-java/interview/pom.xml",
+            "column": 1,
+            "pinned": false
+          },
+          {
+            "fsPath": "/Users/peter/src/personal/educative-io-java/interview/src/test/java/org/psk/interview/RemoveDuplicatesFromSortedArrayTest.java",
+            "column": 1,
+            "pinned": false
+          },
+          {
+            "fsPath": "/Users/peter/src/VS Code Notes/fff.md",
+            "column": 1,
+            "pinned": false
+          },
+          {
+            "fsPath": "/Users/peter/Library/Application Support/Code/User/settings.json",
+            "column": 1,
+            "pinned": false
+          }
+        ],
+        "layout": {
+          "orientation": 0,
+          "groups": [
+            {
+              "size": 612
+            }
+          ]
+        }
+      }
+    ],
+    "files.watcherExclude": {
+      "**/target": true
+    }
+  }
+}

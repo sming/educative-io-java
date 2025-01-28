@@ -1,13 +1,14 @@
-// File: interview/src/test/java/org/psk/interview/MergeIntervalsTest.java
+// File: interview/src/test/java/org/psk/interview/MergeAllOverlappingIntervalsTest.java
 package org.psk.interview;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.psk.interview.utils.Interval;
 
 import java.util.Arrays;
 import java.util.List;
 
-class MergeIntervalsTest {
+class MergeAllOverlappingIntervalsTest {
 
   @Test
   void testMerge() {
@@ -20,7 +21,7 @@ class MergeIntervalsTest {
         new Interval(1, 5),
         new Interval(7, 9));
 
-    assertEquals(expected, MergeIntervals.merge(intervals));
+    assertEquals(expected, MergeAllOverlappingIntervals.merge(intervals));
 
     // intervals = Arrays.asList(
     // new Interval(6, 7),
@@ -31,7 +32,7 @@ class MergeIntervalsTest {
     // new Interval(2, 4),
     // new Interval(5, 9));
 
-    // assertEquals(expected, MergeIntervals.merge(intervals));
+    // assertEquals(expected, MergeAllOverlappingIntervals.merge(intervals));
 
     // intervals = Arrays.asList(
     // new Interval(1, 4),
@@ -41,7 +42,7 @@ class MergeIntervalsTest {
     // expected = Arrays.asList(
     // new Interval(1, 6));
 
-    // assertEquals(expected, MergeIntervals.merge(intervals));
+    // assertEquals(expected, MergeAllOverlappingIntervals.merge(intervals));
   }
 
   @Test
@@ -52,7 +53,7 @@ class MergeIntervalsTest {
         new Interval(8, 10),
         new Interval(15, 18));
 
-    List<Interval> mergedIntervals = MergeIntervals.merge(intervals);
+    List<Interval> mergedIntervals = MergeAllOverlappingIntervals.merge(intervals);
 
     List<Interval> expectedMergedIntervals = Arrays.asList(
         new Interval(1, 6),
