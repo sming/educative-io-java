@@ -1,10 +1,6 @@
 package org.psk.interview;
 
-import java.io.PrintStream;
 import java.util.*;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * In problems where we deal with sorted arrays (or LinkedLists) and need to

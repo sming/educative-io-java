@@ -7,22 +7,9 @@ package org.psk.interview;
  *
  * Example:
  * Following LinkedList has a cycle:
- * head
- * 1
- * 2
- * 3
- * 4
- * 5
- * 6
- * 3
+ * head * 1 * 2 * 3 * 4 * 5 * 6 * 3
  * Following LinkedList doesn't have a cycle:
- * head
- * 2
- * 4
- * 6
- * 8
- * 10
- * null
+ * head * 2 * 4 * 6 * 8 * 10 * null
  */
 
 public class ListNode {
@@ -32,5 +19,19 @@ public class ListNode {
   public ListNode(int v, ListNode next) {
     this.val = v;
     this.next = next;
+  }
+
+  public ListNode(ListNode l) {
+    this.val = l.val;
+    this.next = l.next;
+  }
+
+  ListNode(int value) {
+    this.val = value;
+  }
+
+  @Override
+  public String toString() {
+    return "" + val; // + " -> " + (next != null ? Integer.toString(next.val) : "<null>");
   }
 }

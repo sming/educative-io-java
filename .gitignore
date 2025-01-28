@@ -23,6 +23,7 @@
 hs_err_pid*
 replay_pid*
 
-# PSK: target
+# PSK
 interview/target
 .vscode/settings.json
+.history/
